@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fbfaf7;
+  --foreground: #102b38;
+  --muted: #6d6255;
+  --border: #e8dfd1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: #d5bd85;
+  color: #071923;
+}
+
+@layer base {
+  a,
+  button,
+  input,
+  select,
+  textarea {
+    @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold-500;
+  }
+}
+
+@layer components {
+  .container-luxe {
+    @apply mx-auto w-full max-w-[1440px] px-5 sm:px-8 lg:px-12;
+  }
+
+  .section-y {
+    @apply py-20 sm:py-24 lg:py-32;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.24em] text-gold-700;
+  }
+
+  .heading-display {
+    @apply font-heading text-5xl font-medium leading-[0.98] text-navy-950 sm:text-6xl lg:text-7xl;
+  }
+
+  .heading-section {
+    @apply font-heading text-4xl font-medium leading-tight text-navy-950 sm:text-5xl lg:text-6xl;
+  }
+
+  .body-large {
+    @apply text-lg leading-8 text-stonewarm-800 sm:text-xl sm:leading-9;
+  }
+
+  .subtle-border {
+    @apply border border-stonewarm-200;
+  }
+
+  .image-quiet {
+    @apply overflow-hidden bg-stonewarm-200;
+  }
+}
