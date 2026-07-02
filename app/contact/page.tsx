@@ -57,7 +57,7 @@ export default function ContactPage() {
               <SectionHeading
                 eyebrow="Booking form"
                 title="Tell us how we can help."
-                description="This form is prepared for a future Google Sheets integration through the submitAppointment abstraction."
+                description="Please fill out the form below to request a consultation. We will get back to you as soon as possible to confirm your appointment."
               />
               <div className="mt-8">
                 <AppointmentForm />
