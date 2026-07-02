@@ -40,7 +40,7 @@ export default function BookConsultationPage() {
             <SectionHeading
               eyebrow={site.name}
               title="Appointment request"
-              description="The form is intentionally front-end only for now. The submitAppointment function in lib/appointments.ts is the integration point for Google Sheets."
+              description="Please fill out the form below to request a consultation. We will get back to you as soon as possible to confirm your appointment."
             />
             <div className="mt-8">
               <AppointmentForm />

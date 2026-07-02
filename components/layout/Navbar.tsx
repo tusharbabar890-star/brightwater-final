@@ -80,7 +80,12 @@ export function Navbar() {
                 {item.label}
               </Link>
             ))}
-            <ButtonLink href="/book-consultation" className="mt-5" showArrow={false}>
+            <ButtonLink
+              href="/book-consultation"
+              className="mt-5"
+              onClick={() => setOpen(false)}
+              showArrow={false}
+            >
               Book Consultation
             </ButtonLink>
           </nav>

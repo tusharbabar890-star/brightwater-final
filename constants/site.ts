@@ -299,7 +299,7 @@ export const team = [
     bio:
       "Susan brings a calm, collaborative approach to complex family law matters, with experience across mediation, co-parenting, property division and conflict-aware negotiation.",
     image:
-      "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=900&q=85"
+      "/images/team/susan.avif"
   },
   {
     name: "Tim Cohen",
@@ -307,7 +307,7 @@ export const team = [
     bio:
       "Tim is often the first steady voice clients hear. He helps families understand timing, process and the practical steps that make the legal journey feel more manageable.",
     image:
-      "https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=900&q=85"
+      "/images/team/Tim27.avif"
   }
 ];
 

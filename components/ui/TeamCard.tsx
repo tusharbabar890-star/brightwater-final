@@ -13,7 +13,8 @@ export function TeamCard({ name, role, bio, image }: TeamCardProps) {
       <ImageFrame
         src={image}
         alt={`${name}, ${role}`}
-        className="h-[320px] w-full md:h-[260px] lg:h-[300px]"
+        className="h-[320px] w-full bg-stonewarm-100 md:h-[280px] lg:h-[300px]"
+        imageClassName="object-contain p-0 hover:scale-100"
         sizes="(min-width: 768px) 40vw, 100vw"
       />
       <div className="grid content-start">

@@ -5,6 +5,7 @@ type ImageFrameProps = {
   src: string;
   alt: string;
   className?: string;
+  imageClassName?: string;
   priority?: boolean;
   sizes?: string;
 };
@@ -13,6 +14,7 @@ export function ImageFrame({
   src,
   alt,
   className,
+  imageClassName,
   priority = false,
   sizes = "(min-width: 1024px) 50vw, 100vw"
 }: ImageFrameProps) {
@@ -25,7 +27,10 @@ export function ImageFrame({
         fill
         priority={priority}
         sizes={sizes}
-        className="object-cover transition duration-700 ease-calm hover:scale-[1.02]"
+        className={cn(
+          "object-cover transition duration-700 ease-calm hover:scale-[1.02]",
+          imageClassName
+        )}
       />
     </div>
   );

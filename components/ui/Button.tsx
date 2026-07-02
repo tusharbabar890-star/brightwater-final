@@ -18,6 +18,7 @@ type ButtonLinkProps = {
   children: React.ReactNode;
   tone?: ButtonTone;
   className?: string;
+  onClick?: React.MouseEventHandler<HTMLAnchorElement>;
   showArrow?: boolean;
 };
 
@@ -26,11 +27,13 @@ export function ButtonLink({
   children,
   tone = "primary",
   className,
+  onClick,
   showArrow = true
 }: ButtonLinkProps) {
   return (
     <Link
       href={href}
+      onClick={onClick}
       className={cn(
         "group inline-flex min-h-12 items-center justify-center gap-3 border px-5 text-sm font-semibold transition duration-300 ease-calm",
         toneClasses[tone],

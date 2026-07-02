@@ -34,19 +34,19 @@ export function AppointmentForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="grid gap-5" aria-label="Book consultation form">
-      <div className="grid gap-5 md:grid-cols-2">
+    <form onSubmit={handleSubmit} className="grid min-w-0 gap-5" aria-label="Book consultation form">
+      <div className="grid min-w-0 gap-5 md:grid-cols-2">
         <Input label="Name" name="name" autoComplete="name" required />
         <Input label="Email" name="email" type="email" autoComplete="email" required />
       </div>
-      <div className="grid gap-5 md:grid-cols-2">
+      <div className="grid min-w-0 gap-5 md:grid-cols-2">
         <Input label="Phone" name="phone" type="tel" autoComplete="tel" required />
         <Input label="Preferred Date" name="preferredDate" type="date" required />
       </div>
-      <div className="grid gap-5 md:grid-cols-2">
+      <div className="grid min-w-0 gap-5 md:grid-cols-2">
         <Input label="Preferred Time" name="preferredTime" type="time" required />
         <label
-          className="grid gap-2 text-sm font-semibold text-navy-950"
+          className="grid min-w-0 gap-2 text-sm font-semibold text-navy-950"
           htmlFor="serviceRequired"
         >
           Service Required
@@ -55,7 +55,7 @@ export function AppointmentForm() {
             name="serviceRequired"
             required
             defaultValue=""
-            className="min-h-12 border border-stonewarm-300 bg-white px-4 text-base font-normal text-navy-950"
+            className="min-h-12 w-full min-w-0 border border-stonewarm-300 bg-white px-4 text-base font-normal text-navy-950"
           >
             <option value="" disabled>
               Select a service
@@ -73,14 +73,14 @@ export function AppointmentForm() {
         name="message"
         placeholder="Briefly tell us what you would like help with."
       />
-      <label className="flex gap-3 text-sm leading-6 text-stonewarm-700">
+      <label className="flex min-w-0 gap-3 text-sm leading-6 text-stonewarm-700">
         <input
           type="checkbox"
           name="consent"
           required
-          className="mt-1 h-4 w-4 border-stonewarm-300 text-navy-950"
+          className="mt-1 h-4 w-4 shrink-0 border-stonewarm-300 text-navy-950"
         />
-        <span>
+        <span className="min-w-0">
           I consent to Brightwater Family Law contacting me about my enquiry and understand
           that submitting this form does not create a lawyer-client relationship.
         </span>
